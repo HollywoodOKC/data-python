@@ -72,7 +72,11 @@ elif score <= 59:
 # Problem 11
 # Create a variable called 'changeMyMind' and set it equal to true.
 # Check to see if changeMyMind is set to true or false, if it is true, change the status to false, if it is false, change the status to true.
-
+changeMyMind = True
+if changeMyMind == True:
+    changeMyMind = False
+else:
+    changeMyMind = True
 
 # ADVANCED
 
@@ -81,15 +85,16 @@ friends = ['Joe', 'Sally', 'Camilo', 'Perry', 'Susan']
 
 # Problem 12
 # Research to find the Python method that allows you to add an element to the end of the array (similar to push() in JavaScript), then add a name to the end of the `friends` array.
-
+friends.append('Ariel')
 
 # Problem 13
 # Print out the total amount of elements in the `friends` array. The Python method you are looking for is similar to the JavaScript property `.length`.
-
+print(len(friends))
 
 # Problem 14
 # Add a name into the third position in the array (index 2). Make sure you are not overwriting the value that is already there.
-
+friends.insert(2,'Jimmy')
 
 # Problem 15
 # Remove the last item in the array (try to think about how you can do this dynamically, meaning, if the array contents were to change, your code would still work).
+friends.pop(4)
